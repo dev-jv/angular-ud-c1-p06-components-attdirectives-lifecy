@@ -1,0 +1,27 @@
+<!--<div class="alert alert-primary" role="alert">-->
+<!--  A simple primary alert—check it out!-->
+<!--</div>-->
+
+<!--<div [ngClass]="'alert-info'" class="alert" role="alert">-->
+<!--  A simple primary alert—check it out!-->
+<!--</div>-->
+
+<div [ngClass]="alert" class="alert" role="alert">
+  A simple primary alert—check it out!
+</div>
+
+<button type="button" class="btn btn-info m-1" (click)="alert='alert-info'"> Info </button>
+<button type="button" class="btn btn-success m-1" (click)="alert='alert-success'"> Success </button>
+
+<br>
+
+<h3 [ngClass]="{'text-danger': properties['danger'], 'text-info': !properties['danger']}">
+  What feels like the end is often just the beginning.
+</h3>
+
+<button (click)="properties['danger'] = !properties['danger']"
+  type="button" name="button"
+  class="btn btn-danger"
+  [ngClass]="{'btn-danger': properties['danger'], 'btn-info': !properties['danger']}">
+  Change
+</button>
