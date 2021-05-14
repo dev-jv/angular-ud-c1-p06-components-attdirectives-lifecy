@@ -6,6 +6,7 @@ import { NgStyleComponent } from './components/ng-style/ng-style.component';
 import { CssComponent } from './components/css/css.component';
 import { ClassesComponent } from './components/classes/classes.component';
 import { EmphasizeDirective } from './directives/emphasize.directive';
+import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { EmphasizeDirective } from './directives/emphasize.directive';
     NgStyleComponent,
     CssComponent,
     ClassesComponent,
-    EmphasizeDirective
+    EmphasizeDirective,
+    NgSwitchComponent
   ],
   imports: [
     BrowserModule
