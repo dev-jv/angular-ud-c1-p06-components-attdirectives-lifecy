@@ -11,7 +11,7 @@ import {USER_ROUTES} from './components/user/user.routes';
 const APP_ROUTES: Routes = [
   { path: 'home', component: HomeComponent },
   {
-    path: 'user',
+    path: 'user/:id',
     component: UserComponent,
     children: USER_ROUTES
     // children: [
